@@ -1,7 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <title>Narrara</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Recursive:wght@300;400;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Recursive', sans-serif;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .main, .img-text {
+            margin-right: 100px;
+        }
+
+        p {
+            margin-top: 0.1em;
+        }
+
+        @media (min-width:961px)  {
+        /* tablet, landscape iPad, lo-res laptops, desktops */
+            .topnavbar {
+                display:none;
+            }
+        }
+
+
+        /* hide side bar on small screens */
+        @media screen and (max-width: 799px) {
+            .side {
+                display:none;
+            }
+            .body, .main {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .img-text {
+                margin-top: 14px;
+                margin-right: 5px;
+                margin-left: 150px;
+            }
+            .img-text h4, p {
+                font-size: 8px;
+            }
+        }
+
+
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="side">
+    <div class="round_picture" style="height:150px; width:150px;">
+        <img src="Images/Nahara.png">
+    </div>
+    <h2 class="name">Nahara</h2>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skill Set</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <p>Built with <i class="fa fa-heart"></i> by <b>Nahara</b></p>
+</div>
+
+<!-- Horizontal navbar on small screens -->
+<div class="topnavbar">
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+
+<!-- Main Section -->
+<div class="main">
+    <div id="intro">
+        <img src="Images/Brooklyn_Bridge.png" alt="Brooklyn Bridge">
+        <div class="img-text">
+            <h4>Hey, I'm Narrara (Nahara)</h4>
+            <p>I am passionate about the intersection of technology and different fields.</p>
+        </div>
+        <br>
+    </div>
+
+    <div id="about">
+        <h2>About Me</h2>
+        <div class="text-box">
+            <p class="text-main">I'm a recent graduate from Penn State University with a bachelor's degree <br>
+                in <b>Information Sciences & Technology</b> - application design and development
+                track.</p>
+        </div>
+        <br>
+    </div>
+
+    <div id="skills">
+        <div id="text-skills">
+            <h2>Skill Set</h2>
+            <h4 class="headings-main">Programming Languages & Frameworks</h4>
+            <p class="text-main">SQL, PL/SQL, Java, Python, C#, JavaScript, HTML5, CSS3, jQuery, React</p>
+            <h4 class="headings-main">Tools</h4>
+            <p class="text-main">JUnit, Unity, Oracle APEX, Jira, SQL*Plus, ServiceNow, AdobeXD, Canva</p>
+            <h4 class="headings-main">Methodologies</h4>
+            <p class="text-main">Testing, Agile, Scrum, BDD</p>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <h2>Contact</h2>
+        <div class="text-box">
+            <p class="text-main">
+                Connect with me on <a href="https://www.linkedin.com/in/narrara/">LinkedIn</a>.
+            </p>
+        </div>
+        <br>
+    </div>
+
+
+</div>
+
+
 </body>
 </html>
